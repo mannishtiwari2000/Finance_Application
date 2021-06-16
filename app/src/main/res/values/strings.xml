@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Finance_Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="finance">F I N A N C E</string>
+    <string name="application">A P P L I C A T I O N</string>
+    <string name="stayupdate">Stay Update With</string>
+    <string name="Your_finance">Your Finance Activity</string>
+    <string name="Check">By Click you accept the</string>
+    <string name="Terms">Term &amp; Condition</string>
+    <string name="Register">Please enter your register</string>
+    <string name="Mobile_add">Mobile number or Email Id</string>
+<string name="nav_member">Members</string>
+    <string name="nav_finance">Finance</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

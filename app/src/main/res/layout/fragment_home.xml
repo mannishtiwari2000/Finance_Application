@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#f6f7fb"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+            android:id="@id/section_A"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#f6f7fb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.032">
+
+        <LinearLayout
+                android:id="@+id/section_A"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#f6f7fb"
+                android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/over_due"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical">
+
+
+                    <TextView
+                            android:text="Overdue Loan"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Overdue_Loan"
+                            android:gravity="center_horizontal"/>
+                    <TextView
+                            android:textAlignment="center"
+                            android:text="5"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Overdue_Loan_No"
+                            android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/Member"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                    <TextView
+                            android:text="Members"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Members_dashboard"
+                            android:gravity="center_horizontal"/>
+                    <TextView
+                            android:textAlignment="center"
+                            android:text="50"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Members_dashboard_No"
+                            android:gravity="center_horizontal"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_below="@id/section_A"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:background="#f6f7fb"
+                android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/due_today"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical">
+
+
+                    <TextView
+                            android:text="Due Today"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Due_Today"
+                            android:gravity="center_horizontal"/>
+                    <TextView
+                            android:textAlignment="center"
+                            android:text="5"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Due_Today_No"
+                            android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/Total_profit"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    android:background="#f6f7fb"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical"
+                >
+
+
+                    <TextView
+                            android:text="Total Profit"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Total_Profit"
+                            android:gravity="center_horizontal"/>
+                    <TextView
+                            android:textAlignment="center"
+                            android:text="50"
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Total_Profit_No"
+                            android:gravity="center_horizontal"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_margin="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f7fb"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/section_A"
+            app:layout_constraintVertical_bias="0.089" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/relativeLayout">?
+
+
+        <LinearLayout
+                android:id="@+id/A"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_rounded"
+                android:layout_height="50dp">
+
+
+            <TextView
+                    android:text="Total Loan"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView11" android:layout_weight="1"/>
+            <TextView
+                    android:text="50"
+                    android:textSize="15dp"
+
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" android:id="@+id/textView12" android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/C"
+                android:layout_below="@id/B"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_rounded"
+                android:layout_height="50dp">
+
+
+            <TextView
+                    android:text="Active Loan"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/over_due_"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:text="50"
+                    android:textSize="15dp"
+
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" android:id="@+id/textView12" android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/B"
+                android:layout_below="@id/A"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_rounded"
+                android:layout_height="50dp">
+
+
+            <TextView
+                    android:text="Overdue Amount"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/over_due_A" android:layout_weight="1"/>
+            <TextView
+                    android:text="50"
+                    android:textSize="15dp"
+
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" android:id="@+id/textView12" android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <Button
+                android:text="LOGIN"
+                android:layout_below="@id/C"
+                android:layout_width="match_parent"
+                android:backgroundTint="#ef7b00"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/textview_corner"
+                android:layout_height="40dp"
+                android:id="@+id/button3"
+
+                android:layout_marginTop="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+    <ImageButton
+            android:src="@drawable/ic_baseline_add_24"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.099"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
