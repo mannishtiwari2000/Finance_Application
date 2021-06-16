@@ -10,7 +10,7 @@
     <string name="Terms">Term &amp; Condition</string>
     <string name="Register">Please enter your register</string>
     <string name="Mobile_add">Mobile number or Email Id</string>
-<string name="nav_member">Members</string>
+    <string name="nav_member">Members</string>
     <string name="nav_finance">Finance</string>
     <string name="title_notifications">Notifications</string>
 </resources>
