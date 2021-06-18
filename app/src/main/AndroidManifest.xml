@@ -9,9 +9,18 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Finance_Application">
-        <activity android:name=".Edit_member">
+        <activity android:name=".Profile"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
-        <activity android:name=".View_member">
+        <activity android:name=".Add_More">
+        </activity>
+        <activity
+                android:name=".Edit_member"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name=".View_member"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
         <activity
                 android:name=".New_member"

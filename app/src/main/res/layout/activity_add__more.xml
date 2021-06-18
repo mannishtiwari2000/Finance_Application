@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Add_More">
+
+    <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            android:background="#fdfdfe"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    android:layout_below="@id/SignUp_EmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberPassword"
+                    android:ems="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Date"
+                    android:background="@drawable/editext_rounded"
+                    android:id="@+id/SignUp_Password"/>
+
+            <TextView
+                    android:text="Narender Singh"
+android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Member_name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberPassword"
+                    android:ems="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                   android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Amount"
+                    android:background="@drawable/editext_rounded"
+
+                    android:layout_below="@id/SignUp_Confirm_Password2"
+                    android:id="@+id/Date"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberPassword"
+                    android:ems="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Amount"
+                    android:background="@drawable/editext_rounded"
+
+                    android:layout_below="@id/Member_name"
+                    android:id="@+id/SignUp_Confirm_Password2"/>
+
+
+
+
+            <Spinner
+
+                    android:layout_below="@id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/editext_rounded"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/spinner"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberPassword"
+                    android:ems="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Interest Rate"
+                    android:background="@drawable/editext_rounded"
+
+                    android:layout_below="@id/spinner"
+                    android:id="@+id/Interest_Rate"/>
+
+            <LinearLayout
+                    android:id="@+id/check_l"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@id/Interest_Rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <Button
+                        android:text="CANCEL"
+
+                        android:backgroundTint="#ececf0"
+                        android:textColor="@color/black"
+                        android:background="@drawable/editext_rounded"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="40dp"
+                        android:id="@+id/buttonq" android:layout_weight="1"/>
+
+               <Button
+                        android:text="ADD"
+
+                        android:textColor="@color/white"
+                        android:background="@drawable/editext_rounded"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:layout_height="40dp" android:id="@+id/button" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

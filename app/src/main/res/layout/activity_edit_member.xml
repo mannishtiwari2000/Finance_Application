@@ -27,6 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+      <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
         <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
 
 
@@ -63,7 +64,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                        android:layout_below="@id/Member_name"
+                    android:layout_below="@id/Member_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/Id_head"/>
@@ -92,7 +93,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
-                   android:layout_below="@id/Member_ID"
+                    android:layout_below="@id/Member_ID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/Date_head"/>
@@ -203,7 +204,6 @@
                     android:layout_alignParentLeft="true"/>
 
 
-
             <TextView
                     android:text="Interest Rate "
                     android:layout_marginLeft="20dp"
@@ -258,7 +258,7 @@
                         android:background="@drawable/editext_rounded"
                         android:layout_width="100dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="40dp"
+                        android:layout_marginLeft="55dp"
                         android:layout_height="40dp" android:id="@+id/button" android:layout_weight="1"/>
 
             </LinearLayout>
@@ -275,7 +275,7 @@
                     android:layout_height="50dp">
 
                 <Button
-                        android:text="Browse"
+                        android:text="Cancel"
                         android:backgroundTint="#ececf0"
                         android:textColor="@color/black"
                         android:background="@drawable/editext_rounded"
@@ -289,7 +289,7 @@
                         android:layout_weight="1"/>
                 <Button
                         android:text="Browse"
-
+                        android:backgroundTint="@color/purple_500"
                         android:textColor="@color/white"
                         android:background="@drawable/editext_rounded"
                         android:layout_width="100dp"
@@ -300,6 +300,7 @@
 
             </LinearLayout>
         </RelativeLayout>
+      </ScrollView>
     </androidx.cardview.widget.CardView>
 
 
