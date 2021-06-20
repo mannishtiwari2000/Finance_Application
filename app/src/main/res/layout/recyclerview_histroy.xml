@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+    <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_corner"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/ACCD"
+            android:layout_height="50dp">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1.4"
+
+
+                android:background="@drawable/layout_corner"
+                android:backgroundTint="#a8a8a8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+            <TextView
+                    android:text="RS"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView26"
+                    android:gravity="center_horizontal"/>
+            <TextView
+                    android:text="15,000"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView27"
+                    android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="50dp">
+
+
+            <LinearLayout
+                    android:layout_weight="0.6"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Finance_name"/>
+                <TextView
+
+                        android:text="Date 1-dec-2020"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textVi1ew2117"
+                />
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight="1.4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageButton
+                        android:src="@drawable/ic_baseline_remove_red_eye_24"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton12"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

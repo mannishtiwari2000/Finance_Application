@@ -45,7 +45,7 @@
             android:orientation="vertical"
             android:background="#f6f7fb"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" android:layout_marginTop="10dp">
         <com.comix.rounded.RoundedCornerImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/upload_image_profile"
@@ -113,7 +113,7 @@
                 android:background="@drawable/textview_corner"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:backgroundTint="@color/white"
+
                 android:id="@+id/SignUp_form"
                 android:layout_margin="15dp"
                 android:layout_weight="1"/>

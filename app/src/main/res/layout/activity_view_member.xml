@@ -7,15 +7,64 @@
         android:layout_height="match_parent"
         android:background="#f6f7fb"
         tools:context=".View_member">
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:backgroundTint="@color/white"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_alignParentStart="true"
+            android:layout_marginLeft="0dp" android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+
+                      android:orientation="horizontal">
+            <com.comix.rounded.RoundedCornerImageView
+                    android:id="@+id/Profile_icon"
+                    android:src="@drawable/ic_baseline_add_24"
+
+                    android:layout_width="40dp"
+
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:scaleType="fitXY"
+                    app:cornerBottomDisable="false"
+                    app:cornerLeftDisable="false"
+                    app:cornerRightDisable="false"
+                    app:cornerTopDisable="false" app:cornerRadius="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+                    app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.093"/>
+            <TextView
+                    android:text="View Member"
+                    android:textColor="@color/purple_500"
+                    android:layout_marginRight="20dp"
+
+                    android:textAlignment="viewStart"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9" android:layout_weight="1"
+                    android:gravity="start"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             app:cardCornerRadius="5dp"
             android:background="#fdfdfe"
-
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/toolbar"
             android:padding="20dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="30dp"
             android:layout_marginStart="30dp"
             android:layout_alignParentLeft="true"
@@ -23,256 +72,256 @@
             android:layout_marginEnd="20dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true">
-       <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
->
-        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+    >
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        >
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
 
-            <LinearLayout
-                    android:id="@+id/section_A"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_alignParentTop="true" android:layout_alignParentStart="true"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginStart="0dp" android:layout_alignParentLeft="true">
-
-                <TextView
-                        android:text="Narender Singh"
-                        android:textSize="20dp"
-                        android:paddingLeft="20dp"
-                        android:layout_gravity="center_horizontal"
+                <LinearLayout
+                        android:id="@+id/section_A"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView5"/>
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_below="@id/section_A"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:id="@+id/B"
-                    android:layout_margin="10dp"
-                    android:background="#f8f8fc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                <LinearLayout
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:layout_margin="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp" android:layout_alignParentLeft="true">
 
                     <TextView
-                            android:text="ID Number"
-                            android:layout_margin="5dp"
+                            android:text="Narender Singh"
+                            android:textSize="20dp"
+                            android:paddingLeft="20dp"
+                            android:layout_gravity="center_horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView117"/>
-                    <TextView
-                            android:text="Date &amp; Time"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView118"/>
-                    <TextView
-                            android:text="Loan Type"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView19"/>
-                    <TextView
-                            android:text="Mobile"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView20"/>
-                    <TextView
-                            android:text="Amount"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView21"/>
-                    <TextView
-                            android:text="Interest Rate"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView22"/>
-                    <TextView
-                            android:text="Cycle Date "
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView23"/>
-                    <TextView
-                            android:text="EMI"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView24"/>
-                    <TextView
-                            android:text="Amt with EMI "
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView25"/>
+                            android:id="@+id/textView5"/>
                 </LinearLayout>
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_weight="1"
-                        android:layout_margin="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <TextView
-                            android:text="15765815"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView1111"/>
-                    <TextView
-                            android:text="23:2:22"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView1112"/>
-                    <TextView
-                            android:text="Yearly"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView119"/>
-                    <TextView
-                            android:text="95945025424"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView201"/>
-                    <TextView
-                            android:text="15,000"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView211"/>
-                    <TextView
-                            android:text="2%"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView122"/>
-                    <TextView
-                            android:text="9 to 10"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView213"/>
-                    <TextView
-                            android:text="12,000"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView241"/>
-                    <TextView
-                            android:text="15,300"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView125"/>
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_below="@id/B"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:id="@+id/C"
-                    android:layout_margin="10dp"
-                    android:background="#f8f8fc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
                 <LinearLayout
-                        android:layout_weight="1"
-                        android:orientation="vertical"
+                        android:layout_below="@id/section_A"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/B"
                         android:layout_margin="10dp"
+                        android:background="#f8f8fc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
+                    <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-                    <TextView
-                            android:text="Profile"
-                            android:layout_margin="5dp"
+
+                        <TextView
+                                android:text="ID Number"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView117"/>
+                        <TextView
+                                android:text="Date &amp; Time"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView118"/>
+                        <TextView
+                                android:text="Loan Type"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView19"/>
+                        <TextView
+                                android:text="Mobile"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView20"/>
+                        <TextView
+                                android:text="Amount"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView21"/>
+                        <TextView
+                                android:text="Interest Rate"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView22"/>
+                        <TextView
+                                android:text="Cycle Date "
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView23"/>
+                        <TextView
+                                android:text="EMI"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView24"/>
+                        <TextView
+                                android:text="Amt with EMI "
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView25"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView17"/>
-                    <TextView
-                            android:text="Loss"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" android:id="@+id/textView18"/>
-                   </LinearLayout>
+                            android:layout_height="match_parent">
+
+                        <TextView
+                                android:text="15765815"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView1111"/>
+                        <TextView
+                                android:text="23:2:22"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView1112"/>
+                        <TextView
+                                android:text="Yearly"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView119"/>
+                        <TextView
+                                android:text="95945025424"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView201"/>
+                        <TextView
+                                android:text="15,000"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView211"/>
+                        <TextView
+                                android:text="2%"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView122"/>
+                        <TextView
+                                android:text="9 to 10"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView213"/>
+                        <TextView
+                                android:text="12,000"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView241"/>
+                        <TextView
+                                android:text="15,300"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView125"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
                 <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_weight="1"
+                        android:layout_below="@id/B"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:id="@+id/C"
                         android:layout_margin="10dp"
+                        android:background="#f8f8fc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                    <TextView
-                            android:text="00.00"
-                            android:layout_margin="5dp"
+                    <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView11"/>
-                    <TextView
-                            android:text="00.00"
-                            android:layout_margin="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView111"/>
+                            android:layout_height="wrap_content">
 
+
+                        <TextView
+                                android:text="Profile"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView17"/>
+                        <TextView
+                                android:text="Loss"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textView18"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:text="00.00"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView11"/>
+                        <TextView
+                                android:text="00.00"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView111"/>
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-            <LinearLayout
-                   android:id="@+id/D"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_marginLeft="30dp"
-                   android:layout_marginBottom="40dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_below="@id/C"
-                    android:layout_height="100dp">
+                <LinearLayout
+                        android:id="@+id/D"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_below="@id/C"
+                        android:layout_height="100dp">
 
-                <ImageButton
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/editext_rounded"
-                        android:layout_gravity="end"
-                        app:srcCompat="@drawable/ic_baseline_add_24"
-                        android:id="@+id/imageButton"
-                        tools:ignore="VectorDrawableCompat"/>
+                    <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/editext_rounded"
+                            android:layout_gravity="end"
+                            app:srcCompat="@drawable/ic_baseline_add_24"
+                            android:id="@+id/imageButton"
+                            tools:ignore="VectorDrawableCompat"/>
 
-                <Button
-                        android:layout_weight="1"
-                        android:text="Edit"
-                        android:textColor="@color/white"
-                        android:drawableRight="@drawable/ic_baseline_edit_24"
-                        android:backgroundTint="#ff6666"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
- android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:id="@+id/button2"/>
-            </LinearLayout>
+                    <Button
+                            android:layout_weight="1"
+                            android:text="Edit"
+                            android:textColor="@color/white"
+                            android:drawableRight="@drawable/ic_baseline_edit_24"
+                            android:backgroundTint="#ff6666"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:id="@+id/button2"/>
+                </LinearLayout>
 
 
-        </RelativeLayout>
+            </RelativeLayout>
 
-       </ScrollView>
+        </ScrollView>
 
     </androidx.cardview.widget.CardView>
 

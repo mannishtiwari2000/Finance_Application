@@ -1,21 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Add_More">
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:backgroundTint="@color/white"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_alignParentStart="true"
+            android:layout_marginLeft="0dp" android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+
+                      android:orientation="horizontal">
+            <com.comix.rounded.RoundedCornerImageView
+                    android:id="@+id/Profile_icon"
+                    android:src="@drawable/ic_baseline_add_24"
+
+                    android:layout_width="40dp"
+
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:scaleType="fitXY"
+                    app:cornerBottomDisable="false"
+                    app:cornerLeftDisable="false"
+                    app:cornerRightDisable="false"
+                    app:cornerTopDisable="false" app:cornerRadius="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+                    app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.093"/>
+            <TextView
+                    android:text="Add More"
+                    android:textColor="@color/purple_500"
+                    android:layout_marginRight="20dp"
+
+                    android:textAlignment="viewStart"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9" android:layout_weight="1"
+                    android:gravity="start"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.cardview.widget.CardView
-
+android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
             app:cardCornerRadius="5dp"
             android:background="#fdfdfe"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:padding="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
@@ -36,7 +84,7 @@
                     android:layout_marginTop="10dp"
                     android:paddingLeft="10dp"
                     android:hint="Date"
-                    android:background="@drawable/editext_rounded"
+                    android:background="@drawable/textview_corner"
                     android:id="@+id/SignUp_Password"/>
 
             <TextView
@@ -119,22 +167,25 @@ android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp">
                 <Button
-                        android:text="CANCEL"
-
-                        android:backgroundTint="#ececf0"
+                        android:text="Cancel"
                         android:textColor="@color/black"
-                        android:background="@drawable/editext_rounded"
+                        android:background="@drawable/textview_corner"
+
                         android:layout_width="100dp"
                         android:layout_gravity="center_vertical"
+
                         android:layout_height="40dp"
-                        android:id="@+id/buttonq" android:layout_weight="1"/>
+
+                        android:id="@+id/button1"
+                        android:layout_weight="1"/>
 
                <Button
                         android:text="ADD"
 
                         android:textColor="@color/white"
-                        android:background="@drawable/editext_rounded"
+                        android:background="@drawable/textview_corner"
                         android:layout_width="100dp"
+                        android:backgroundTint="@color/purple_500"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="40dp"
                         android:layout_height="40dp" android:id="@+id/button" android:layout_weight="1"/>
@@ -145,4 +196,4 @@ android:layout_marginTop="10dp"
     </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

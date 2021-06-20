@@ -8,18 +8,49 @@
         android:layout_height="match_parent"
         tools:context=".ui.home.HomeFragment">
 
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/white"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+>
+    <com.comix.rounded.RoundedCornerImageView
+            android:id="@+id/Profile_icon"
+            android:src="@drawable/ic_baseline_add_24"
+
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+
+            android:scaleType="fitXY"
+            app:cornerBottomDisable="false"
+            app:cornerLeftDisable="false"
+            app:cornerRightDisable="false"
+            app:cornerTopDisable="false" app:cornerRadius="35dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.093"/>
+
+</LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
     <RelativeLayout
             android:id="@id/section_A"
-            android:layout_width="match_parent"
-         android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:background="#f6f7fb"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4">
+            app:layout_constraintHorizontal_bias="0.4" app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <LinearLayout
                 android:id="@+id/section_A"
@@ -37,12 +68,13 @@
                     android:id="@+id/over_due"
                     android:layout_weight="1"
                     app:cardCornerRadius="5dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="30dp"
 
                     android:layout_width="match_parent"
-                    android:layout_height="80dp">
+                    android:layout_height="85dp">
+
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
                               android:orientation="vertical">
@@ -72,11 +104,11 @@
                     android:layout_weight="1"
                     app:cardCornerRadius="5dp"
                     android:paddingLeft="5dp"
-                    android:layout_marginRight="35dp"
+                    android:layout_marginRight="30dp"
                     android:layout_marginTop="5dp"
-                         android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp">
+                    android:layout_height="85dp">
 
                 <LinearLayout
                         android:layout_width="match_parent" android:layout_height="match_parent"
@@ -94,7 +126,7 @@
                     <TextView
                             android:textAlignment="center"
                             android:text="50"
-                          android:layout_marginTop="10dp"
+                            android:layout_marginTop="10dp"
                             android:layout_gravity="center_vertical"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -113,7 +145,7 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"
 
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:background="#f6f7fb"
                 android:layout_height="wrap_content">
 
@@ -123,12 +155,12 @@
                     android:layout_weight="1"
                     app:cardCornerRadius="5dp"
                     android:paddingLeft="5dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
 
                     android:layout_marginLeft="30dp"
 
                     android:layout_width="match_parent"
-                    android:layout_height="80dp">
+                    android:layout_height="85dp">
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
                               android:orientation="vertical">
@@ -160,11 +192,11 @@
                     app:cardCornerRadius="5dp"
                     android:paddingLeft="5dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="35dp"
+                    android:layout_marginRight="30dp"
 
 
                     android:layout_width="match_parent"
-                    android:layout_height="80dp">
+                    android:layout_height="85dp">
 
                 <LinearLayout
                         android:layout_width="match_parent" android:layout_height="match_parent"
@@ -200,7 +232,7 @@
             android:layout_marginStart="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:background="#f6f7fb"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/section_A"
@@ -312,17 +344,24 @@
                 android:layout_alignParentLeft="true"/>
 
     </RelativeLayout>
-    <ImageButton
-
-            android:src="@drawable/ic_baseline_add_24"
-            android:layout_width="50dp"
-            android:background="@color/white"
-            android:scaleType="fitXY"
-            android:layout_height="50dp"
+    <com.comix.rounded.RoundedCornerImageView
             android:id="@+id/Add_member"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="0.099"/>
+            android:src="@drawable/ic_baseline_add_24"
+
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+
+            android:scaleType="fitXY"
+            app:cornerBottomDisable="false"
+            app:cornerLeftDisable="false"
+            app:cornerRightDisable="false"
+            app:cornerTopDisable="false"
+            app:cornerColor="#FFF"
+            app:cornerRadius="35dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.093"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
