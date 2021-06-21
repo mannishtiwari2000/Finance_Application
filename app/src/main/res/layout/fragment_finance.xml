@@ -184,7 +184,7 @@
             android:layout_marginLeft="20dp"
             android:layout_width="382dp"
             app:cardCornerRadius="5dp"
-            android:layout_height="240dp"
+            android:layout_height="340dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/Section_A" android:layout_alignParentStart="true"
             android:layout_marginStart="20dp"
@@ -192,7 +192,7 @@
             android:layout_alignParentEnd="true" android:layout_alignParentRight="true" android:layout_marginRight="9dp"
             android:layout_marginEnd="20dp">
 
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="240dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="340dp">
 
             <LinearLayout
                     android:id="@+id/section_ABC"

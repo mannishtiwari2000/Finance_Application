@@ -17,15 +17,13 @@ class Member_Adapter(private val mlist: List<Member_Model>) : RecyclerView.Adapt
     private lateinit var mlistener: onclicklistener
 
     interface onclicklistener {
-        fun onItemclick(position: Int)
+        fun onItemclick(view:View,position: Int)
     }
 
     fun setonitemclicklistener(listener: onclicklistener) {
         mlistener = listener
     }
-    fun setonitemclicklistener_Edit(listener: onclicklistener) {
-        mlistener = listener
-    }
+
 
     class MemberviewHolder(Itemview: View, listener: onclicklistener) : RecyclerView.ViewHolder(Itemview) {
         val name_member: TextView = Itemview.findViewById(R.id.mem_name)
@@ -33,13 +31,10 @@ class Member_Adapter(private val mlist: List<Member_Model>) : RecyclerView.Adapt
         val edit_member: Button = Itemview.findViewById(R.id.Edit_Member_Btn)
 
         init {
-            view_member.setOnClickListener {
-                listener.onItemclick(adapterPosition)
+           Itemview.setOnClickListener {
+                listener.onItemclick(it,adapterPosition)
             }
 
-            edit_member.setOnClickListener {
-                listener.onItemclick(adapterPosition)
-            }
         }
 
 

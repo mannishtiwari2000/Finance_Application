@@ -44,18 +44,24 @@ class MembersFragment : Fragment() {
         val adapter=Member_Adapter(data)
         recycler_mem.adapter=adapter
         adapter.setonitemclicklistener(object :Member_Adapter.onclicklistener{
-            override fun onItemclick(position: Int) {
-             startActivity(Intent(context,View_member::class.java))
+            override fun onItemclick(view: View,position: Int) {
+           var edit_btn:Button=view.findViewById(R.id.Edit_Member_Btn)
+
+                edit_btn.setOnClickListener {
+                    startActivity(Intent(context,Edit_member::class.java))
+
+                }
+            var view_btn:Button=view.findViewById(R.id.View_member)
+
+                view_btn.setOnClickListener {
+                    startActivity(Intent(context,Edit_member::class.java))
+                }
             }
 
         })
 
-        adapter.setonitemclicklistener_Edit(object :Member_Adapter.onclicklistener{
-            override fun onItemclick(position: Int) {
-                startActivity(Intent(context,Edit_member::class.java))
 
-            }
-        })
+
 
 
 
