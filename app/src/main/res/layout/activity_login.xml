@@ -55,7 +55,7 @@
                     android:inputType="textEmailAddress"
                     android:ems="10"
                     android:background="@drawable/editext_rounded"
-                    android:id="@+id/username"
+                    android:id="@+id/username_Login"
                     android:paddingLeft="10dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
@@ -78,14 +78,14 @@
                     android:paddingLeft="10dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@id/username"
-                    android:id="@+id/Password" android:layout_alignParentEnd="true"
+                    android:layout_below="@id/username_Login"
+                    android:id="@+id/Password_Login" android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
             />
             <TextView
                     android:text="Forget Password"
 
-                    android:layout_below="@id/Password"
+                    android:layout_below="@id/Password_Login"
                     android:layout_width="match_parent"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"

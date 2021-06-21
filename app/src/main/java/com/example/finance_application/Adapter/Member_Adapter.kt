@@ -23,13 +23,21 @@ class Member_Adapter(private val mlist: List<Member_Model>) : RecyclerView.Adapt
     fun setonitemclicklistener(listener: onclicklistener) {
         mlistener = listener
     }
+    fun setonitemclicklistener_Edit(listener: onclicklistener) {
+        mlistener = listener
+    }
 
     class MemberviewHolder(Itemview: View, listener: onclicklistener) : RecyclerView.ViewHolder(Itemview) {
         val name_member: TextView = Itemview.findViewById(R.id.mem_name)
         val view_member: Button = Itemview.findViewById(R.id.View_member)
+        val edit_member: Button = Itemview.findViewById(R.id.Edit_Member_Btn)
 
         init {
             view_member.setOnClickListener {
+                listener.onItemclick(adapterPosition)
+            }
+
+            edit_member.setOnClickListener {
                 listener.onItemclick(adapterPosition)
             }
         }

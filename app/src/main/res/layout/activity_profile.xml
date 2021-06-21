@@ -66,6 +66,7 @@
             android:layout_marginTop="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
 
@@ -242,6 +243,7 @@
                           android:id="@+id/sectionE"
                           android:layout_below="@id/ViewE"
                           android:layout_height="30dp"
+
                           android:orientation="horizontal">
 
                 <com.comix.rounded.RoundedCornerImageView
@@ -284,6 +286,7 @@
                           android:id="@+id/sectionF"
                           android:layout_below="@id/ViewF"
                           android:layout_height="30dp"
+                         android:layout_marginBottom="5dp"
                           android:orientation="horizontal">
 
                 <com.comix.rounded.RoundedCornerImageView

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.comix.rounded.RoundedCornerImageView
 import com.example.finance_application.Adapter.Member_Adapter
+import com.example.finance_application.Edit_member
 import com.example.finance_application.Model.Member_Model
 import com.example.finance_application.Profile
 import com.example.finance_application.R
@@ -47,6 +48,13 @@ class MembersFragment : Fragment() {
              startActivity(Intent(context,View_member::class.java))
             }
 
+        })
+
+        adapter.setonitemclicklistener_Edit(object :Member_Adapter.onclicklistener{
+            override fun onItemclick(position: Int) {
+                startActivity(Intent(context,Edit_member::class.java))
+
+            }
         })
 
 
