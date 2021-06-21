@@ -29,7 +29,7 @@ class Member_Adapter(private val mlist: List<Member_Model>) : RecyclerView.Adapt
         val view_member: Button = Itemview.findViewById(R.id.View_member)
 
         init {
-            Itemview.setOnClickListener {
+            view_member.setOnClickListener {
                 listener.onItemclick(adapterPosition)
             }
         }

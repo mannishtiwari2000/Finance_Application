@@ -44,7 +44,7 @@ class MembersFragment : Fragment() {
         recycler_mem.adapter=adapter
         adapter.setonitemclicklistener(object :Member_Adapter.onclicklistener{
             override fun onItemclick(position: Int) {
-
+             startActivity(Intent(context,View_member::class.java))
             }
 
         })
