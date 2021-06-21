@@ -10,13 +10,14 @@
     <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/custom_action_bar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:theme="?attr/actionBarTheme"
             android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_alignParentStart="true"
-            android:layout_marginLeft="0dp" android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+           android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
             android:layout_marginTop="0dp" android:layout_alignParentTop="true">
         <com.comix.rounded.RoundedCornerImageView
                 android:id="@+id/Profile_icon"
@@ -57,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_marginRight="40dp"
             android:layout_height="220dp"
+            app:cardCornerRadius="5dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="20dp"
@@ -64,8 +66,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="50dp" android:layout_below="@+id/toolbar">
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp" android:layout_below="@+id/toolbar">
 
 
         <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp">
@@ -86,7 +88,7 @@
 
                 <TextView
                         android:text="STATISTICS"
-                        android:textSize="20dp"
+                        android:textSize="15dp"
                         android:paddingLeft="20dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="match_parent"
@@ -181,8 +183,9 @@
             android:id="@+id/Section_B"
             android:layout_marginLeft="20dp"
             android:layout_width="382dp"
+            app:cardCornerRadius="5dp"
             android:layout_height="240dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/Section_A" android:layout_alignParentStart="true"
             android:layout_marginStart="20dp"
             android:layout_alignParentLeft="true"
@@ -208,7 +211,7 @@
 
                 <TextView
                         android:text="ACTIVITY"
-                        android:textSize="20dp"
+                        android:textSize="15dp"
                         android:paddingLeft="20dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="match_parent"
@@ -257,7 +260,7 @@
                     android:layout_width="match_parent"
                     android:layout_below="@id/ACC"
                     android:id="@+id/history_finance_recycler"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_height="match_parent"/>
 

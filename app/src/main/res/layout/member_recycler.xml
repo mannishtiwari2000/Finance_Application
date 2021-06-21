@@ -12,7 +12,7 @@
             android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-           android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:layout_alignParentLeft="true"
 
             android:layout_alignParentRight="true"
@@ -90,14 +90,14 @@
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textVie1c" android:layout_weight="1"
+                        android:id="@+id/mem_phone" android:layout_weight="1"
                         android:gravity="center_horizontal"/>
                 <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textVi1es"
+                        android:id="@+id/mem_id"
                         android:layout_weight="1"
                         android:gravity="center_horizontal"/>
                 <TextView
@@ -106,7 +106,7 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textVie1w4"
+                        android:id="@+id/mem_status"
                         android:layout_weight="1"
                         android:gravity="center_horizontal"/>
             </LinearLayout>
@@ -160,7 +160,7 @@
                        android:layout_width="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/tetVi1ewb"
+                        android:id="@+id/mem_amt"
                         android:layout_weight="1"
                         android:gravity="center_horizontal"/>
                 <TextView
@@ -169,7 +169,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textViwc1" android:layout_weight="1"
+                        android:id="@+id/mem_Emi" android:layout_weight="1"
                         android:gravity="center_horizontal"/>
                 <TextView
                         android:text="TextView"
@@ -177,7 +177,7 @@
                         android:layout_width="wrap_content"
 
                         android:layout_height="wrap_content"
-                        android:id="@+id/tetView1s" android:layout_weight="1"
+                        android:id="@+id/mem_Due" android:layout_weight="1"
                      />
                     </LinearLayout>
 
@@ -197,7 +197,7 @@
                     android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
                     android:backgroundTint="#bfa1ff"
                     android:layout_weight="1"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
 
@@ -208,7 +208,7 @@
                     android:text="Edit"
                     android:drawableRight="@drawable/ic_baseline_edit_24"
                     android:backgroundTint="#ff6666"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
 
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
@@ -219,8 +219,7 @@
                     android:text="Save"
                     android:drawableRight="@drawable/ic_baseline_arrow_circle_down_24"
                     android:backgroundTint="#999999"
-                    android:layout_margin="10dp"
-
+                    android:layout_margin="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:id="@+id/button13"/>

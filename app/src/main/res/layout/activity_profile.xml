@@ -10,13 +10,15 @@
     <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/custom_action_bar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:theme="?attr/actionBarTheme"
             android:backgroundTint="@color/white"
             android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_alignParentStart="true"
-            android:layout_marginLeft="0dp" android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
             android:layout_marginTop="0dp" android:layout_alignParentTop="true">
         <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
 

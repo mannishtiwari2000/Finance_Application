@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -41,6 +42,12 @@ class MembersFragment : Fragment() {
         }
         val adapter=Member_Adapter(data)
         recycler_mem.adapter=adapter
+        adapter.setonitemclicklistener(object :Member_Adapter.onclicklistener{
+            override fun onItemclick(position: Int) {
+
+            }
+
+        })
 
 
 

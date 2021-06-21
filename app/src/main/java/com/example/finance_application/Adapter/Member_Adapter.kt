@@ -13,25 +13,39 @@ import com.example.finance_application.View_member
 
 import android.widget.Toast
 
-class Member_Adapter(private val mlist:List<Member_Model>): RecyclerView.Adapter<Member_Adapter.MemberviewHolder>() {
+class Member_Adapter(private val mlist: List<Member_Model>) : RecyclerView.Adapter<Member_Adapter.MemberviewHolder>() {
+    private lateinit var mlistener: onclicklistener
+
+    interface onclicklistener {
+        fun onItemclick(position: Int)
+    }
+
+    fun setonitemclicklistener(listener: onclicklistener) {
+        mlistener = listener
+    }
+
+    class MemberviewHolder(Itemview: View, listener: onclicklistener) : RecyclerView.ViewHolder(Itemview) {
+        val name_member: TextView = Itemview.findViewById(R.id.mem_name)
+        val view_member: Button = Itemview.findViewById(R.id.View_member)
+
+        init {
+            Itemview.setOnClickListener {
+                listener.onItemclick(adapterPosition)
+            }
+        }
 
 
-class MemberviewHolder(Itemview:View) : RecyclerView.ViewHolder(Itemview)
-{
-val name_member:TextView=Itemview.findViewById(R.id.mem_name)
- val view_member:Button=Itemview.findViewById(R.id.View_member)
-
-
-}
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemberviewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.member_recycler,parent,false)
-        return MemberviewHolder(view)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.member_recycler, parent, false)
+        return MemberviewHolder(view, mlistener)
     }
 
     override fun onBindViewHolder(holder: MemberviewHolder, position: Int) {
-val data=mlist[position]
-        holder.name_member.text=data.Name_Member
+        val data = mlist[position]
+        holder.name_member.text = data.Name_Member
+
 
 
     }
