@@ -63,9 +63,9 @@ android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
             app:cardCornerRadius="5dp"
             android:background="#fdfdfe"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
@@ -299,18 +299,23 @@ android:layout_marginTop="10dp"
 
                 <TextView
                         android:text="Upload Documents"
+
+                        android:layout_weight="1"
                         android:layout_gravity="center_vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 <Button
                         android:text="Browse"
+                        android:textFontWeight="1"
                         android:backgroundTint="#ececf0"
+                        android:layout_marginRight="10dp"
                         android:textColor="@color/black"
                         android:background="@drawable/editext_rounded"
                         android:layout_width="100dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="55dp"
-                        android:layout_height="40dp" android:id="@+id/button" android:layout_weight="1"/>
+                        android:layout_marginLeft="40dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/button" android:layout_weight="1"/>
 
             </LinearLayout>
 
@@ -345,7 +350,8 @@ android:layout_marginTop="10dp"
                         android:layout_width="100dp"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="40dp"
-                        android:layout_height="40dp" android:id="@+id/butt12on"
+                        android:layout_height="40dp"
+                        android:id="@+id/butt12on"
                         android:layout_weight="1"/>
 
             </LinearLayout>

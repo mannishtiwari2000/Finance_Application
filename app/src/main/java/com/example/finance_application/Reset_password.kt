@@ -12,8 +12,8 @@ class Reset_password : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reset_password)
-        var Email:EditText=findViewById(R.id.Forget_Email)
-        var Reset:Button=findViewById(R.id.Reset_btn)
+        var Email:EditText=findViewById(R.id.username_Reset)
+        var Reset:Button=findViewById(R.id.Reset_Btn)
         Reset.setOnClickListener {
             email_validation(Email)
             startActivity(Intent(baseContext,Login::class.java))

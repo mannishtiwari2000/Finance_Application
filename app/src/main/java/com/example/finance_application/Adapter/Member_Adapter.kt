@@ -15,24 +15,33 @@ import android.widget.Toast
 
 class Member_Adapter(private val mlist: List<Member_Model>) : RecyclerView.Adapter<Member_Adapter.MemberviewHolder>() {
     private lateinit var mlistener: onclicklistener
+    private lateinit var mlistener1: onclicklistener1
 
     interface onclicklistener {
-        fun onItemclick(view:View,position: Int)
+        fun onItemclick(position: Int)
     }
-
+    interface onclicklistener1 {
+        fun onItemclick1(position: Int)
+    }
+    fun setonitemclicklistener1(listener1: onclicklistener1) {
+        mlistener1 = listener1
+    }
     fun setonitemclicklistener(listener: onclicklistener) {
         mlistener = listener
     }
 
 
-    class MemberviewHolder(Itemview: View, listener: onclicklistener) : RecyclerView.ViewHolder(Itemview) {
+    class MemberviewHolder(Itemview: View, listener: onclicklistener,listener1: onclicklistener1) : RecyclerView.ViewHolder(Itemview) {
         val name_member: TextView = Itemview.findViewById(R.id.mem_name)
         val view_member: Button = Itemview.findViewById(R.id.View_member)
         val edit_member: Button = Itemview.findViewById(R.id.Edit_Member_Btn)
 
         init {
-           Itemview.setOnClickListener {
-                listener.onItemclick(it,adapterPosition)
+           view_member.setOnClickListener {
+                listener.onItemclick(adapterPosition)
+            }
+            edit_member.setOnClickListener {
+                listener1.onItemclick1(adapterPosition)
             }
 
         }
@@ -42,7 +51,7 @@ class Member_Adapter(private val mlist: List<Member_Model>) : RecyclerView.Adapt
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemberviewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.member_recycler, parent, false)
-        return MemberviewHolder(view, mlistener)
+        return MemberviewHolder(view, mlistener,mlistener1)
     }
 
     override fun onBindViewHolder(holder: MemberviewHolder, position: Int) {

@@ -298,8 +298,10 @@
 
                     <ImageButton
                             android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_height="20dp"
                             android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
                             android:background="@drawable/editext_rounded"
                             android:layout_gravity="end"
                             app:srcCompat="@drawable/ic_baseline_add_24"
@@ -317,7 +319,7 @@
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
-                            android:id="@+id/button2"/>
+                            android:id="@+id/Edit_view"/>
                 </LinearLayout>
 
 
