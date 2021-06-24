@@ -9,8 +9,12 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Finance_Application">
-        <activity android:name=".Profile"
+        <activity android:name=".Terms_Condition"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Profile"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
         <activity android:name=".Add_More">
         </activity>

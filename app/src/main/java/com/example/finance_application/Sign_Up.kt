@@ -1,9 +1,12 @@
 package com.example.finance_application
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class Sign_Up : AppCompatActivity() {
@@ -11,6 +14,8 @@ class Sign_Up : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign__up)
+
+        var terms:TextView=findViewById(R.id.Terms_condition_form)
         var email_sign:EditText=findViewById(R.id.SignUp_EmailAddress)
         var name_sign:EditText=findViewById(R.id.SignUp_Name)
         var phone_sign:EditText=findViewById(R.id.SignUp_Phone)
@@ -19,6 +24,10 @@ class Sign_Up : AppCompatActivity() {
         var Sign_uP:Button=findViewById(R.id.Sign_Up)
         Sign_uP.setOnClickListener {
             email_validation(email_sign,name_sign,phone_sign,password_sign,confirm_Password,name_sign)
+        }
+
+        terms.setOnClickListener {
+            startActivity(Intent(baseContext,Terms_Condition::class.java))
         }
 
     }

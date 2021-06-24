@@ -315,7 +315,7 @@ android:layout_marginTop="10dp"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="40dp"
                         android:layout_height="38dp"
-                        android:id="@+id/button" android:layout_weight="1"/>
+                        android:id="@+id/button_brower" android:layout_weight="1"/>
 
             </LinearLayout>
 
@@ -343,7 +343,7 @@ android:layout_marginTop="10dp"
                         android:id="@+id/button1"
                         android:layout_weight="1"/>
                 <Button
-                        android:text="Browse"
+                        android:text="Submit"
                         android:backgroundTint="@color/purple_500"
                         android:textColor="@color/white"
                         android:background="@drawable/editext_rounded"
