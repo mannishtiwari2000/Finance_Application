@@ -1,6 +1,8 @@
 package com.example.finance_application
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -27,6 +29,12 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         supportActionBar?.customView
         navView.setupWithNavController(navController)
+
+    }
+
+    override fun onBackPressed() {
+        startActivity(Intent(baseContext,MainActivity::class.java))
+      Toast.makeText(this,"Can't Go Back......!",Toast.LENGTH_LONG).show()
 
     }
 }

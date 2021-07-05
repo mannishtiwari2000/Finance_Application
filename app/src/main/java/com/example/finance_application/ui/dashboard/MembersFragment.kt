@@ -1,16 +1,21 @@
 package com.example.finance_application.ui.dashboard
 
 import android.content.Intent
+import android.location.GnssAntennaInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.VolleyError
+import com.android.volley.toolbox.JsonArrayRequest
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.comix.rounded.RoundedCornerImageView
 import com.example.finance_application.Adapter.Member_Adapter
 import com.example.finance_application.Edit_member
@@ -18,6 +23,11 @@ import com.example.finance_application.Model.Member_Model
 import com.example.finance_application.Profile
 import com.example.finance_application.R
 import com.example.finance_application.View_member
+import org.json.JSONArray
+import org.json.JSONObject
+import java.util.function.ToLongBiFunction
+import javax.xml.transform.ErrorListener
+
 
 class MembersFragment : Fragment() {
 
@@ -77,6 +87,28 @@ class MembersFragment : Fragment() {
 //        view_mem.setOnClickListener {
 //            startActivity(Intent(context,View_member::class.java))
 //        }
+
+        getdata()
         return root
+    }
+
+    private fun getdata() {
+        var url:String="https://reqres.in/api/users?page=1"
+        val queue = Volley.newRequestQueue(context)
+
+        val stringRequest = StringRequest(
+            Request.Method.GET, url,
+            { response ->
+//               var obj:JSONObject= JSONObject(response)
+//                val name:String=obj.getString("")
+                Toast.makeText(context,"NAME :",Toast.LENGTH_LONG).show()
+
+            },
+            {
+                Toast.makeText(context,"Failed....",Toast.LENGTH_LONG).show()
+            })
+
+// Add the request to the RequestQueue.
+        queue.add(stringRequest)
     }
 }
