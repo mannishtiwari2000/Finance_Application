@@ -92,7 +92,7 @@
                             android:gravity="center_horizontal"/>
                     <TextView
                             android:textAlignment="center"
-                            android:text="5"
+                            android:text="0"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_vertical"
                             android:layout_width="match_parent"
@@ -127,7 +127,7 @@
                             android:gravity="center_horizontal"/>
                     <TextView
                             android:textAlignment="center"
-                            android:text="50"
+                            android:text="0"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_vertical"
                             android:layout_width="match_parent"
@@ -178,7 +178,7 @@
                             android:gravity="center_horizontal"/>
                     <TextView
                             android:textAlignment="center"
-                            android:text="5"
+                            android:text="0"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_vertical"
                             android:layout_width="match_parent"
@@ -216,7 +216,7 @@
                             android:gravity="center_horizontal"/>
                     <TextView
                             android:textAlignment="center"
-                            android:text="50"
+                            android:text="0"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_vertical"
                             android:layout_width="match_parent"
@@ -261,7 +261,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content" android:id="@+id/textView11" android:layout_weight="1"/>
             <TextView
-                    android:text="50"
+                    android:text="0"
                     android:textSize="15dp"
 
                     android:layout_width="wrap_content"
@@ -289,7 +289,7 @@
                     android:id="@+id/over_due_"
                     android:layout_weight="1"/>
             <TextView
-                    android:text="50"
+                    android:text="0"
                     android:textSize="15dp"
 
                     android:layout_width="wrap_content"
@@ -318,7 +318,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/over_due_A" android:layout_weight="1"/>
             <TextView
-                    android:text="50"
+                    android:text="0"
                     android:textSize="15dp"
 
                     android:layout_width="wrap_content"
